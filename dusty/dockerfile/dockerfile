@@ -1,0 +1,5 @@
+FROM dustynv/onnxruntime:r36.2.0
+
+COPY build_genai.sh /tmp/genai/
+
+RUN /tmp/genai/build_genai.sh
